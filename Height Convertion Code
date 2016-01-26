@@ -1,0 +1,11 @@
+class Height_conversion():
+    def ft_met_to_cm(self, ft, name):
+        self.ft = ft
+        self.name = name
+        output1 = ft * 30.48 # Centimetres
+        output2 = self.ft * 0.3048 # Metres
+        print "Hello %s, you are %d centimetres tall. Also your height in metres is %.2f." % (name,output1,output2)
+
+HC = Height_conversion()     
+
+HC.ft_met_to_cm(6.5, "Dan")
